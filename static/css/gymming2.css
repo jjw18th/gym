@@ -1,0 +1,17 @@
+body
+{
+  background-image: url('../pictures/landingpage.jpeg');
+}
+#i2:hover
+{
+  font-size: 30px;
+}
+a:visited
+{
+  color:darkgray;
+  text-decoration: underline;
+}
+#sub:hover> ul
+{
+  display:block;
+}

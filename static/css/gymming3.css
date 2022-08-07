@@ -1,0 +1,14 @@
+body
+{
+  background-image: url('../pictures/landingpage.jpeg');
+}
+
+li:hover
+{
+  font-size:30px;
+}
+a:visited
+{
+  color:darkgray;
+  text-decoration: underline;
+}

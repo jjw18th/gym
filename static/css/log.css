@@ -1,0 +1,36 @@
+#content table
+{
+  width:70%;
+  border:2px Solid #000020;
+  position:relative;
+  left:370px;
+  bottom:110px;
+}
+h1
+{
+  color:black;
+  background-color:dimgrey;
+  width: 300px;
+  position:relative;
+  border-style: solid;
+  border-color:gainsboro;
+  border-radius:5px;
+  box-shadow:5px 5px 10px black;
+  display:inline;
+}
+a:hover
+{
+  font-size: 20px;
+}
+a:visited
+{
+  color:darkblue;
+}
+#content table th{
+  background-color:white;
+  font:weight:bold;
+}
+#content table td
+{
+  background-color:rgb(210,210,210);
+}

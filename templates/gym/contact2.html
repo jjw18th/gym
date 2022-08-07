@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href={% static 'css/contact.css' %}>
+  </head>
+  <body>
+    <h1 id="2">FITNESS GYM</h1>
+  <div id="u1">
+     <a  href="http://localhost:8000"> HOME </a>
+    <a  href="http://localhost:8000/about"> ABOUT </a>
+    <a href="http://localhost:8000/login">LOGIN </a>
+    <a href="http://localhost:8000/contact">CONTACT</a>
+  </div>
+  <div>
+    <h2 id="l1">Contact Us</h2>
+  </div>
+  <table>
+    <tr>
+      <th style="color:black; font-size:30px; position:relative; top:60px; left:100px; text-decoration:underline">Address</th>
+    </tr>
+    <tr>
+      <td style="color:white; position:relative;top:69px; left:140px;">A2-2E Subham Elite<br>Gandhibasti,Silpukhri<br>781003</td>
+    </tr>
+    <tr>
+      <th style="color:black; font-size:30px; position:relative; top:78px; left:89px; text-decoration:underline">Phone</th>
+    </tr>
+    <tr>
+      <td style="color:white; position:relative; top:90px;left:145px; font-size:20px;">8209180759</td>
+    </tr>
+    <tr>
+      <th style="color:black; font-size:30px; position:relative; top:100px; left:85px; text-decoration:underline">Email</th>
+    </tr>
+    <tr>
+      <td style="color:white; position:relative; top:115px;left:140px;">darshu18th@gmail.com</td>
+    </tr>
+    <tr>
+      <th style="color:black; font-size:30px; position:relative; top:125px; left:97px; text-decoration:underline">Others</th>
+    </tr>
+    <tr>
+      <a href="https://www.instagram.com/darshujjw_/"><img id="insta" src="{% static 'pictures/instalogo.jpeg' %}" width="20" style="position:relative; top:420px; right:480px;"></a>
+      <a href="https://m.facebook.com/100003406605555/"><img id="fb" src="{% static 'pictures/fb.jpeg'%}" width="20"  style="position:relative; top:420px; right:528px;"></a>
+    </tr>
+  </table>
+  <h3 style="color:white; font-size:22px; position:relative; bottom:280px; left:650px; block:inline; align:center; text-decoration:underline;">Thankyou for your message</h3>
+  <div id="main" style="position:relative; left:650px; bottom:300px;">
+  <h3 style="display:inline; position:relative; bottom:20px; font-size:30px; text-decoration:underline; left:10px;">SEND MESSAGE</h2><br>
+  <form style="display:inline;"action="http://localhost:8000/products/msgsave" method="post">
+    {% csrf_token %}
+    <label style="position:relative; top:10px; left:50px;">Full Name</label>
+    <br>
+    <input style="position:relative;left:30px;top:10px;" type="username" name="username">
+    <br>
+    <br>
+    <label style="position:relative; top:10px; left:60px;">Message</label>
+    <br>
+    <textarea style="position:relative; top:10px; left:23px;" name="message" rows="5" cols="28"></textarea>
+    <br><br>
+    <input style="position:relative; top:30px; left:90px; border-style:solid; border-color:black; background-color:grey; font-size:20px;" type="submit" value="Send">
+  </form>
+  </div>
+  </body>
+</html>

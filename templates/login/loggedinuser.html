@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href={% static 'css/logged.css' %}>
+  </head>
+  <body style="  background-color:rgb(160,160,160);">
+    <div style="background-color:black; position:relative; top:20px; left:380px; width:70%;">
+        <h1 style="left:15px;"id="2">FITNESS GYM</h1>
+    </div>
+    <img src="{% static 'pictures/admin.jpeg' %}"   style="position:relative;width:20px; left:1150px; display: inline;bottom:10px;">
+    <p style="position:relative; left:1180px; bottom:48px; font-weight:bold; color:white;">Admin</p>
+    <div style="position:relative; top:150px; left:400px; display:inline;">
+      <a id="d2" style="text-decoration:none;"href="http://localhost:8000/login/trainer"><img src="{% static 'pictures/boxes.jpeg' %}"  style="position:relative;width:200px;height:100px;"><h2 style="color:white; position:relative; font-weight:bold;display:inline;right:180px;bottom:7px;">Total Trainers</h2></a>
+      <a style="text-decoration:none;" href="http://localhost:8000/login/member"><img src="{% static 'pictures/boxes.jpeg' %}" style="position:relative;width:200px;height:100px;right:133px;"><h2 style="color:white; position:relative; font-weight:bold;display:inline;right:310px;bottom:7px;">Total Batches</h2></a>
+      <a style="text-decoration:none;" href="http://localhost:8000/login/product"><img src="{% static 'pictures/boxes.jpeg' %}" style="position:relative;width:200px; height:100px; right:264px;"><h2 style="color:white; position:relative; font-weight:bold;display:inline;right:450px;bottom:7px;">Total Orders</h2></a>
+      <a style="text-decoration:none;" href="http://localhost:8000/login/order"><img src="{% static 'pictures/boxes.jpeg' %}" style="position:relative;width:200px; height:100px; right:390px;"><h2 style="color:white; position:relative; font-weight:bold;display:inline;left:660px;bottom:35px;">Total Products</h2></a>
+    </div>
+   <div style="background-color:lightgrey; display:inline;"class="">
+     <table>
+       <tr>
+         <td><img src="{% static 'pictures/admin.jpeg' %}"style="position:relative;width:120px; display: inline;bottom:235px;"></td>
+         <td><img src="{% static 'pictures/gymlogo.jpeg' %}"style="position:relative;width:114px; display: inline;bottom:235px;left:10px;"></td>
+       </tr>
+     </table>
+   </div>
+     <div style="background-color:white; width:263px;height:30px; position:relative;bottom:210px;">
+       <a id="d2" style="text-decoration:none; position:relative; left:70px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/login/success">Dashboard</a>
+       <img src="{% static 'pictures/home.jpeg' %}"  style="position:relative;height:20px;right:90px;">
+     </div>
+     <div style="background-color:white; width:263px;height:30px; position:relative;bottom:200px;">
+       <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/login/package">Programs</a>
+       <img src="{% static 'pictures/package.jpeg' %}"  style="position:relative;height:20px;right:80px;">
+     </div>
+     <div style="background-color:white; width:263px;height:30px; position:relative;bottom:190px;">
+       <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/products/productsuser">Products</a>
+       <img src="{% static 'pictures/product.jpeg' %}"  style="position:relative;height:20px;right:66px; top:2px;">
+     </div>
+     <div style="background-color:white; width:263px;height:30px; position:relative;bottom:180px;">
+       <a id="d2" style="text-decoration:none; position:relative; left:72px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/login/traineruser">Trainers</a>
+       <img src="{% static 'pictures/trainer.jpeg' %}"  style="position:relative;height:20px;right:62px;">
+     </div>
+     <div style="background-color:white; width:263px;height:30px; position:relative;bottom:170px;">
+       <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/products/batchesuser">Batches</a>
+       <img src="{% static 'pictures/batches.jpeg' %}"  style="position:relative;height:20px;right:55px; top:2px;">
+     </div>
+     <div style="background-color:white; width:263px;height:30px; position:relative;bottom:160px;">
+       <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/products/diet">Diet Plans</a>
+       <img src="{% static 'pictures/diet.jpeg' %}"  style="position:relative;height:20px;right:77px;">
+     </div>
+     <div style="background-color:white; width:263px;height:30px; position:relative;bottom:150px;">
+       <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/products/faq">FAQs</a>
+       <img src="{% static 'pictures/FAQ.jpeg' %}"  style="position:relative;height:20px;right:30px; top:2px;">
+     </div>
+     <div style="background-color:white; width:263px;height:30px; position:relative;bottom:130px;">
+       <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/products/recipe">Recipes</a>
+       <img src="{% static 'pictures/recipe.jpeg' %}"  style="position:relative;height:20px;right:52px; top:2px;">
+     </div>
+     <div style="background-color:white; width:263px;height:30px; position:relative;bottom:120px;">
+       <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/products/diet">Orders</a>
+       <img src="{% static 'pictures/orders.jpeg' %}"  style="position:relative;height:20px;right:44px; top:2px;">
+     </div>
+   </body>
+</html>

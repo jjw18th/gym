@@ -1,0 +1,74 @@
+h1
+{
+  color:black;
+  background-color:dimgrey;
+  width: 230px;
+  position:relative;
+  left:20px;
+  top:20px;
+  border-style: solid;
+  border-color:gainsboro;
+  border-radius:5px;
+  box-shadow:5px 5px 10px black;
+  display:inline;
+}
+body
+{
+ background-image: url('../pictures/login.jpeg');
+ background-repeat: repeat-x;
+}
+#photo
+{
+  background-image: url('../pictures/login2.jpeg');
+}
+#f1 a
+{
+  color: black;
+  font-size:20px;
+  font-weight:bold;
+  text-decoration: none;
+  position:relative;
+  left:400px;
+  padding:30px;
+}
+#f1 a:hover
+{
+  font-size: 30px;
+}
+#f1 a:visited
+{
+  color:black;
+  text-decoration: underline;
+}
+#main
+{
+  border-style: solid;
+  border-width: 15px;
+  position: relative;
+  top:70px;
+  padding:20px;
+  left:750px;
+  display:inline-block;
+  height: 300px;
+  width: 250px;
+  padding:50px;
+  background-color: lightgrey;
+}
+label
+{
+  font-weight:bold;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+#g2
+{
+  border-style: solid;
+  background-color: white;
+  text-decoration: none;
+  color:black;
+  position: relative;
+  top:10px;
+  left:15px;
+  background-color: grey;
+  font-size: 20px;
+}

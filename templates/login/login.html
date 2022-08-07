@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  </head>
+  <body>
+    <div id="f1">
+      <h1 id="2">FITNESS GYM</h1>
+      <a href="http://localhost:8000"> HOME </a>
+      <a  href="http://localhost:8000/about"> ABOUT </a>
+      <a href="http://localhost:8000/login">LOGIN </a>
+      <a href="http://localhost:8000/contact">CONTACT</a>
+    </div>
+    <p style="position:relative; left:750px; top:115px; color:white; font-weight:bold; font-size:22px; text-decoration:underline">{{error}}</p>
+    <div id="main">
+      <h2 style="display:inline; position:relative; bottom:20px; font-size:30px; text-decoration:underline; left:10px;">LOGIN FORM</h2><br>
+      <form style="display:inline;"action="http://localhost:8000/login/loginnuser" method="post">
+        {% csrf_token %}
+        <label>Username</label>
+        <br>
+        <input type="username" name="username">
+        <br>
+        <br>
+        <label>Password</label>
+        <br>
+        <input type="password" name="password">
+        <br><br>
+        <input style="position:relative; top:10px; border-style:solid; border-color:black; background-color:grey; font-size:20px;" type="submit" value="Login">
+      </form>
+        <a id="g2" href="http://localhost:8000/login/createuser">Create Account</a>
+    </div>
+  </body>
+</html>

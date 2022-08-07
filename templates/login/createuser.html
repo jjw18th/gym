@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CREATE USER</title>
+    <link rel="stylesheet" href="{% static 'css/createuser2.css' %}">
+  </head>
+  <body>
+    <h1>REGISTRATION FORM</h1>
+    <div>
+    <form action="http://localhost:8000/login/save" method="post">
+      {% csrf_token %}
+      <label>Name<span style="color:red;">*</span></label><br>
+      <input type="username" name="first" value="first">
+      <input type="username" name="last" value="last">
+      <br>
+      <label>Gender<span style="color:red;">*</span></label><br>
+      <input type="radio" name="gender">Male<br><input type="radio" name="gender">Female
+      <br><label>Your current weight(in kilos)<span style="color:red;">*</span></label><br>
+      <input type="number" name="weight"><br>
+      <label>Desired weight(in kilos)<span style="color:red;">*</span></label><br>
+      <input type="number" name="desired"><br>
+      <label>Height(in cms)<span style="color:red;">*</span></label><br>
+      <input type="number" name="height"><br>
+      <label>Birth Date<span style="color:red;">*</span></label><br>
+      <input type="date" name="birthdate"><br>
+      <label>Home Address<span style="color:red;">*</span></label><br>
+      <input type="text" name="street" value="Street Address"><br>
+      <input id="g1" type="text" name="city" value="City">
+      <select name="state">
+        <option>Assam</option>
+        <option>Arunachal Pradesh</option>
+        <option>Mizoram</option>
+      </select>
+      <br>
+      <input id="g2"type="number" name="postal" value="781003">
+      <select name="country">
+        <option>India</option>
+      </select>
+      <br>
+        <label>Email<span style="color:red;">*</span></label><br>
+        <input type="email" name="email">
+      <br>
+        <label>Phone No.<span style="color:red;">*</span></label><br>
+        <input type="number" name="phone">
+        <br>
+        <label>Today's Date <span style="color:red;">*</span></label>
+        <input type="date" name="today">
+        <br>
+        <label>Do you require a personal trainer?<span style="color:red;">*</span></label><br>
+        <input type="radio" name="trainer">Yes <br> <input type="radio" name="trainer">No
+        <br>
+        <label>Have you been in gym before?<span style="color:red;">*</span></label><br>
+        <input type="radio" name="gym">Yes <br><input type="radio" name="gym">No<br>
+        <label>Membership Type<span style="color:red;">*</span></label><br>
+        <input type="radio" name="membership">Regular<br><input type="radio" name="membership">VIP<br>
+        <input type="submit" name="save" value="save">
+        <input type="reset">
+        <br>
+    </form>
+    </div>
+  </body>
+</html>

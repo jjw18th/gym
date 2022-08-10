@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  </head>
+  <body>
+    <div id="f1">
+      <h1 id="2">FITNESS GYM</h1>
+      <a href="http://localhost:8000"> HOME </a>
+      <a  href="http://localhost:8000/about"> ABOUT </a>
+      <a href="http://localhost:8000/login">LOGIN </a>
+      <a href="#">CONTACT</a>
+    </div>
+    <div id="main">
+      <h2 style="display:inline; position:relative; bottom:20px; font-size:26px; text-decoration:underline; left:10px;">CREATE ACCOUNT</h2><br>
+       <p> {{error}} </p>
+      <form style="display:inline;"action="http://localhost:8000/login/usercreate" method="post">
+        {% csrf_token %}
+        <label>Username</label>
+        <br>
+        <input type="username" name="username">
+        <br>
+        <br>
+        <label>Password</label>
+        <br>
+        <input type="password" name="password">
+        <br><br>
+        <label>Re-Enter Password</label>
+        <br>
+        <input type="password" name="again">
+        <br><br>
+        <input type="submit" value="CREATE">
+      </form>
+    </div>
+  </body>
+</html>

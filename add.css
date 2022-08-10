@@ -1,0 +1,40 @@
+#main
+{
+  border-style: solid;
+  border-width: 15px;
+  position: relative;
+  bottom:100px;
+  padding:20px;
+  left:560px;
+  display:inline-block;
+  width: 350px;
+  padding:50px;
+  background-color: lightgrey;
+}
+label
+{
+    font-weight:bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+h1
+{
+  color:black;
+  background-color:dimgrey;
+  width: 300px;
+  position:relative;
+  left:20px;
+  border-style: solid;
+  border-color:gainsboro;
+  border-radius:5px;
+  box-shadow:5px 5px 10px black;
+  display:inline;
+}
+form input
+{
+  display:block;
+  font-weight:block;
+  margin-top:10px;
+  margin-bottom:20px;
+  background-color:darkgrey;
+}

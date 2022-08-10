@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Product</title>
+    <link rel="stylesheet" href={% static 'css/addtrainer.css' %}>
+  </head>
+  <body style="  background-color:rgb(160,160,160);">
+    <div style="background-color:black; position:relative; top:20px; left:380px; width:70%;">
+        <h1 style="left:15px;"id="2">FITNESS GYM</h1>
+    </div>
+    <img src="{% static 'pictures/admin.jpeg' %}"   style="position:relative;width:20px; left:1150px; display: inline;bottom:10px;">
+    <p style="position:relative; left:1180px; bottom:48px; font-weight:bold; color:white;">Admin</p>
+      <a style="position:relative; display:inline;left:560px;top:15px; text-decoration:underline; color:white; font-size:20px;" href="http://localhost:8000/products/batches">View Batches</a>
+      <a style="color:white; position:relative; display:inline; left:580px;top:15px;text-decoration:underline; font-size:20px;" href="http://localhost:8000/products/new-batch">Add New Batch</a>
+      <a style="color:white; position:relative;display:inline;left:600px;top:15px;text-decoration:underline;font-size:20px;" href="http://localhost:8000/products/search-batches">Search Batches</a>
+    <div style="background-color:lightgrey; display:inline;"class="">
+      <table>
+        <tr>
+          <td><img src="{% static 'pictures/admin.jpeg' %}"style="position:relative;width:120px; display: inline;bottom:114px;"></td>
+          <td><img src="{% static 'pictures/gymlogo.jpeg' %}"style="position:relative;width:114px; display: inline;bottom:114px;left:10px;"></td>
+        </tr>
+      </table>
+     </div>
+     <div id="main" style="height:400px;">
+       <h2 style="display:inline; position:relative; bottom:20px; font-size:30px; text-decoration:underline; left:29px;">ADD NEW BATCH</h2><br>
+       <form action="http://localhost:8000/products/add-batch" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+           <br>
+            <label>Batch Name</label><br>
+            <input style="background-color:darkgrey; color:black;" type="username" name="BatchName" value="xyz">
+            <br>
+            <br>
+            <label>Batch Timing</label><br>
+            <input style="background-color:darkgrey; color:black;" type="username" name="BatchTiming" value="7:00AM">
+            <br>
+            <br>
+            <input style="position:relative; left:80px;border-width:3px;  border-width: 3px;background-color:darkgrey; bottom:30px;"type="submit" name="save" value="save">
+            <input style="position:relative; left:137px; border-width:3px;background-color:darkgrey;bottom:74px;"type="reset">
+       </form>
+     </div>
+    </div>
+    <div style="background-color:white; width:263px;height:30px; position:relative;bottom:620px;">
+      <a id="d2" style="text-decoration:none; position:relative; left:60px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/login/success">Dashboard</a>
+      <img src="{% static 'pictures/home.jpeg' %}"  style="position:relative;height:20px;right:95px;">
+    </div>
+    <div style="background-color:white; width:263px;height:30px; position:relative;bottom:610px;">
+      <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/login/package">Package</a>
+      <img src="{% static 'pictures/package.jpeg' %}"  style="position:relative;height:20px;right:62px;">
+    </div>
+    <div style="background-color:white; width:263px;height:30px; position:relative;bottom:600px;">
+      <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/products/products">Products</a>
+      <img src="{% static 'pictures/product.jpeg' %}"  style="position:relative;height:20px;right:62px;">
+    </div>
+  </body>
+ </html>

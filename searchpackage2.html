@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Trainer</title>
+    <link rel="stylesheet" href={% static 'css/log.css' %}>
+  </head>
+  <body style="  background-color:rgb(160,160,160);">
+    <div style="background-color:black; position:relative; top:20px; left:380px; width:70%;">
+        <h1 style="left:15px;"id="2">FITNESS GYM</h1>
+    </div>
+    <img src="{% static 'pictures/admin.jpeg' %}"   style="position:relative;width:20px; left:1150px; display: inline;bottom:10px;">
+    <p style="position:relative; left:1180px; bottom:48px; font-weight:bold; color:white;">Admin</p>
+      <a style="position:relative; display:inline;bottom:7px;left:400px; text-decoration:underline; color:white; font-size:20px;" href="http://localhost:8000/login/view-trainer">View Trainers</a>
+      <a style="color:white; position:relative; display:inline;bottom:7px; left:420px;text-decoration:underline; font-size:20px;" href="http://localhost:8000/login/new-trainer">Add New Trainer</a>
+      <a style="color:white; position:relative;display:inline;bottom:7px; left:440px;text-decoration:underline;font-size:20px;" href="http://localhost:8000/login/search-trainer">Search Trainer</a>
+    <div style="background-color:lightgrey; display:inline;"class="">
+      <table>
+        <tr>
+          <td><img src="{% static 'pictures/admin.jpeg' %}"style="position:relative;width:120px; display: inline;bottom:114px;"></td>
+          <td><img src="{% static 'pictures/gymlogo.jpeg' %}"style="position:relative;width:114px; display: inline;bottom:114px;left:10px;"></td>
+        </tr>
+      </table>
+     </div>
+     <div id="content">
+       <h2 style="font-weight:bold; position:relative; left:650px; bottom:100px; text-decoration:underline;">View All Trainer Records</h2>
+       <table>
+         <tr>
+         <th>Package Name</th>
+         <th>Picture</th>
+         <th>Price</th>
+         <th>Details</th>
+         <th>Actions</th>
+        </tr>
+        {% for package in packages %}
+        <tr>
+          <td><span style="position:relative;">{{package.PackageName}}</span></td>
+          <td><span style="position:relative;"><img style="width:50px;" src='/media/{{package.Pic}}'></span></td>
+          <td><span  style="position:relative;">{{package.Price}}</span></td>
+          <td><span style="position:relative;">{{package.Details}}</span></td>
+          <td><a style="position:relative; ;color:darkred;"href="http://localhost:8000/login/edit-package?package-id={{package.id}}">Edit</a> <a style="position:relative; left:8px;color:darkred;" href="http://localhost:8000/login/delete-package?package-id={{package.id}}">Delete</a></td>
+        </tr>
+        {% endfor %}
+       </table>
+     </div>
+    </div>
+    <div style="background-color:white; width:263px;height:30px; position:relative;bottom:280px;">
+      <a id="d2" style="text-decoration:none; position:relative; left:60px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/login/success">Dashboard</a>
+      <img src="{% static 'pictures/home.jpeg' %}"  style="position:relative;height:20px;right:95px;">
+    </div>
+    <div style="background-color:white; width:263px;height:30px; position:relative;bottom:270px;">
+      <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/login/package">Package</a>
+      <img src="{% static 'pictures/package.jpeg' %}"  style="position:relative;height:20px;right:62px;">
+    </div>
+    <div style="background-color:white; width:263px;height:30px; position:relative;bottom:260px;">
+      <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/products/products">Products</a>
+      <img src="{% static 'pictures/product.jpeg' %}"  style="position:relative;height:20px;right:62px;">
+    </div>
+</div>
+   </body
+ </html>

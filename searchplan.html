@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New Trainer</title>
+    <link rel="stylesheet" href={% static 'css/log.css' %}>
+  </head>
+  <body style="  background-color:rgb(160,160,160);">
+    <div style="background-color:black; position:relative; top:20px; left:380px; width:70%;">
+        <h1 style="left:15px;"id="2">FITNESS GYM</h1>
+    </div>
+    <img src="{% static 'pictures/admin.jpeg' %}"   style="position:relative;width:20px; left:1150px; display: inline;bottom:10px;">
+    <p style="position:relative; left:1180px; bottom:48px; font-weight:bold; color:white;">Admin</p>
+      <a style="position:relative; display:inline;bottom:7px;left:400px; text-decoration:underline; color:white; font-size:20px;" href="http://localhost:8000/products/diet">View Diet Plan</a>
+      <a style="color:white; position:relative; display:inline;bottom:7px; left:420px;text-decoration:underline; font-size:20px;" href="http://localhost:8000/products/new-plan">Add New Diet Plan</a>
+      <a style="color:white; position:relative;display:inline;bottom:7px; left:440px;text-decoration:underline;font-size:20px;" href="http://localhost:8000/products/search-plan">Search Plan</a>
+      <div style="background-color:lightgrey; display:inline;"class="">
+        <table>
+          <tr>
+            <td><img src="{% static 'pictures/admin.jpeg' %}"style="position:relative;width:120px; display: inline;bottom:114px;"></td>
+            <td><img src="{% static 'pictures/gymlogo.jpeg' %}"style="position:relative;width:114px; display: inline;bottom:114px;left:10px;"></td>
+          </tr>
+        </table>
+       </div>
+      <div style="border-style: solid;
+      border-width: 10px;
+      position: relative;
+      left:590px;
+      bottom:50px;
+      padding:20px;
+      display:inline-block;
+      width: 250px;
+      padding:50px;
+      background-color: lightgrey;
+      height:100px;">
+      <form action="http://localhost:8000/products/search2-plans" method="post">
+        {% csrf_token%}
+        <label style="text-decoration:underline;position:relative; bottom:20px; left:35px; font-size:25px;">ENTER MEAL</label><br>
+        <br>
+        <input style="background-color:white; color:black; position:relative;bottom:20px; left:30px;" type="username" name="Meal">
+        <br><br>
+        <input style="position:relative;border-width:3px;left:40px; border-width:5px;background-color:darkgrey;"type="submit" name="save" value="search">
+        <input style="position:relative;left:60px;border-width:5px;background-color:darkgrey;"type="reset">
+      </form>
+      </div>
+        <div style="background-color:white; width:263px;height:30px; position:relative;bottom:320px;">
+        <a id="d2" style="text-decoration:none; position:relative; left:60px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/login/success">Dashboard</a>
+        <img src="{% static 'pictures/home.jpeg' %}"  style="position:relative;height:20px;right:95px;">
+      </div>
+      <div style="background-color:white; width:263px;height:30px; position:relative;bottom:310px;">
+        <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/login/package">Package</a>
+        <img src="{% static 'pictures/package.jpeg' %}"  style="position:relative;height:20px;right:62px;">
+      </div>
+      <div style="background-color:white; width:263px;height:30px; position:relative;bottom:300px;">
+        <a id="d2" style="text-decoration:none; position:relative; left:73px;font-weight:bold;color:black;font-size:25px;"href="http://localhost:8000/products/products">Products</a>
+        <img src="{% static 'pictures/product.jpeg' %}"  style="position:relative;height:20px;right:62px;">
+      </div>
+  </div>
+     </body
+   </html>

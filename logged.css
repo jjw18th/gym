@@ -1,0 +1,16 @@
+h1
+{
+  color:black;
+  background-color:dimgrey;
+  width: 300px;
+  position:relative;
+  border-style: solid;
+  border-color:gainsboro;
+  border-radius:5px;
+  box-shadow:5px 5px 10px black;
+  display:inline;
+}
+a:hover
+{
+  text-shadow:7px -7px 4px silver;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="{% static 'css/gymming3.css' %}">
+  </head>
+  <body>
+    <h1 style="
+    color:black;
+    background-color:dimgrey;
+    width: 230px;
+    position:relative;
+    left:20px;
+    top:20px;
+    border-style: solid;
+    border-color:gainsboro;
+    border-radius:10px;
+    box-shadow:5px 5px 10px black;
+    display:inline;" id="2">FITNESS GYM</h1>
+  <div id="menu">
+  <ul style="  list-style:none;
+    position:relative;
+    margin:0;
+    padding:0;
+    float:left;
+    left:750px;
+    bottom:23px;
+    ">
+    <li style="float:left; position:relative;margin:0;
+    padding:0;"><a id="i2" style="color:dimgrey;  font-weight:bold;
+      text-decoration: none;line-height:32px; padding:0 15px; font-size:23px;display:block;"href="#">HOME</a></li>
+    <li style="float:left; position:relative;margin:0;  padding:0;"><a style="color:dimgrey;  font-weight:bold;
+      text-decoration: none;line-height:32px;  padding:0 15px;font-size:23px;display:block;"href="http://localhost:8000/contact">CONTACT</a></li>
+    <li style="float:left; position:relative;margin:0;  padding:0;"><a style="color:dimgrey;  font-weight:bold;
+      text-decoration: none;line-height:32px;  padding:0 15px;font-size:23px;display:block;"href="http://localhost:8000/about">ABOUT</a></li>
+    <li id="sub" style="float:left; position:relative;margin:0;  padding:0;"><a style="color:dimgrey;  font-weight:bold;
+      text-decoration: none;line-height:32px;  padding:0 15px;font-size:23px;display:block;"href="#">LOGIN</a>
+      <ul style="position:relative;right:37px;top:100%;">
+        <li style="float:left; position:relative;margin:0;  padding:0; float:none; width:140px; background-color:lightgrey; "><a style="color:dimgrey;  font-weight:bold;
+          text-decoration: none;line-height:32px;  padding:0 15px; font-size:15px;display:block;right:10px;position:relative;" href="http://localhost:8000/login">USER LOGIN</a></li>
+        <li style="float:left; position:relative;margin:0;  padding:0;float:none; width:140px;  background-color:lightgrey; top:3px;"><a style="color:dimgrey;  font-weight:bold;
+          text-decoration: none;line-height:32px; right:10px;position:relative; padding:0 15px;font-size:15px;display:block;" href="http://localhost:8000/login/user">ADMIN LOGIN</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+  </body>
+</html>
